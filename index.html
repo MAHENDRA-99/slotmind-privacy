@@ -1,311 +1,223 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Privacy Policy & Terms of Use — SlotMind (Ekagra)</title>
-    <style>
-        :root {
-            --bg-color: #0B0F19;
-            --card-bg: #151D2E;
-            --border-color: #26334D;
-            --accent-green: #10B981;
-            --accent-cyan: #38BDF8;
-            --accent-amber: #F59E0B;
-            --text-primary: #F8FAFC;
-            --text-secondary: #94A3B8;
-            --text-muted: #64748B;
-        }
-
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-        }
-
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-            background-color: var(--bg-color);
-            color: var(--text-primary);
-            line-height: 1.6;
-            padding: 24px 16px;
-        }
-
-        .container {
-            max-width: 820px;
-            margin: 0 auto;
-        }
-
-        header {
-            text-align: center;
-            padding: 36px 0 24px 0;
-            border-bottom: 1px solid var(--border-color);
-            margin-bottom: 32px;
-        }
-
-        .badge {
-            display: inline-block;
-            background: rgba(16, 185, 129, 0.15);
-            color: var(--accent-green);
-            font-size: 12px;
-            font-weight: 700;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            padding: 6px 14px;
-            border-radius: 9999px;
-            border: 1px solid rgba(16, 185, 129, 0.3);
-            margin-bottom: 14px;
-        }
-
-        h1 {
-            font-size: 28px;
-            font-weight: 800;
-            color: var(--text-primary);
-            margin-bottom: 8px;
-            letter-spacing: -0.5px;
-        }
-
-        @media (min-width: 640px) {
-            h1 {
-                font-size: 32px;
-            }
-        }
-
-        .subtitle {
-            font-size: 15px;
-            color: var(--text-secondary);
-            font-weight: 500;
-        }
-
-        .meta-info {
-            margin-top: 14px;
-            font-size: 13px;
-            color: var(--text-muted);
-            line-height: 1.8;
-        }
-
-        .meta-info span {
-            display: inline-block;
-            margin: 0 4px;
-        }
-
-        .card {
-            background-color: var(--card-bg);
-            border: 1px solid var(--border-color);
-            border-radius: 16px;
-            padding: 24px;
-            margin-bottom: 24px;
-        }
-
-        h2 {
-            font-size: 19px;
-            font-weight: 700;
-            color: var(--accent-cyan);
-            margin-bottom: 14px;
-            display: flex;
-            align-items: center;
-            gap: 8px;
-        }
-
-        p {
-            color: var(--text-secondary);
-            font-size: 15px;
-            margin-bottom: 14px;
-        }
-
-        p:last-child {
-            margin-bottom: 0;
-        }
-
-        ul {
-            list-style-type: none;
-            padding-left: 0;
-            margin-bottom: 14px;
-        }
-
-        li {
-            position: relative;
-            padding-left: 24px;
-            margin-bottom: 12px;
-            color: var(--text-secondary);
-            font-size: 14px;
-            line-height: 1.6;
-        }
-
-        li::before {
-            content: "•";
-            color: var(--accent-cyan);
-            font-size: 20px;
-            position: absolute;
-            left: 8px;
-            top: -2px;
-        }
-
-        strong {
-            color: var(--text-primary);
-        }
-
-        code {
-            background: rgba(255, 255, 255, 0.08);
-            color: var(--accent-cyan);
-            padding: 2px 6px;
-            border-radius: 4px;
-            font-size: 13px;
-            font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
-        }
-
-        .highlight-box {
-            background: rgba(56, 189, 248, 0.08);
-            border-left: 4px solid var(--accent-cyan);
-            padding: 14px 16px;
-            border-radius: 0 10px 10px 0;
-            margin: 16px 0;
-            font-size: 14px;
-            color: var(--text-secondary);
-            line-height: 1.6;
-        }
-
-        .warning-box {
-            background: rgba(245, 158, 11, 0.08);
-            border-left: 4px solid var(--accent-amber);
-            padding: 14px 16px;
-            border-radius: 0 10px 10px 0;
-            margin: 16px 0;
-            font-size: 14px;
-            color: var(--text-secondary);
-            line-height: 1.6;
-        }
-
-        footer {
-            text-align: center;
-            padding: 40px 16px;
-            color: var(--text-muted);
-            font-size: 13px;
-            border-top: 1px solid var(--border-color);
-            margin-top: 40px;
-        }
-
-        footer a {
-            color: var(--accent-cyan);
-            text-decoration: none;
-        }
-
-        footer a:hover {
-            text-decoration: underline;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SlotMind — Privacy Policy &amp; Terms of Use</title>
+  <style>
+    :root {
+      --bg: #0B0F19;
+      --surface: #111827;
+      --border: #1F2937;
+      --text: #E5E7EB;
+      --muted: #9CA3AF;
+      --accent: #38BDF8;
+      --green: #10B981;
+      --amber: #F59E0B;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      padding: 24px 16px 48px;
+      background: var(--bg);
+      color: var(--text);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Inter, sans-serif;
+      line-height: 1.65;
+    }
+    .container {
+      max-width: 820px;
+      margin: 0 auto;
+    }
+    .hero {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 24px;
+      margin-bottom: 20px;
+    }
+    .badge {
+      display: inline-block;
+      background: rgba(16, 185, 129, 0.14);
+      color: var(--green);
+      border: 1px solid rgba(16, 185, 129, 0.35);
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      padding: 4px 10px;
+      border-radius: 999px;
+      margin-bottom: 12px;
+    }
+    h1 {
+      margin: 0 0 6px;
+      font-size: 26px;
+      color: #F8FAFC;
+    }
+    .subtitle {
+      margin: 0 0 14px;
+      color: var(--accent);
+      font-size: 15px;
+      font-weight: 600;
+    }
+    .meta {
+      font-size: 13px;
+      color: var(--muted);
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px 18px;
+    }
+    .card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 20px 22px;
+      margin-bottom: 16px;
+    }
+    h2 {
+      margin: 0 0 10px;
+      font-size: 18px;
+      color: #F8FAFC;
+    }
+    p { margin: 0 0 10px; }
+    ul {
+      margin: 6px 0 0;
+      padding-left: 20px;
+    }
+    li { margin-bottom: 8px; }
+    strong { color: #F8FAFC; }
+    code {
+      background: #1E293B;
+      color: #7DD3FC;
+      padding: 2px 6px;
+      border-radius: 6px;
+      font-size: 13px;
+    }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .highlight-box {
+      background: rgba(56, 189, 248, 0.08);
+      border-left: 3px solid var(--accent);
+      padding: 12px 14px;
+      border-radius: 8px;
+      margin: 12px 0;
+      font-size: 14px;
+    }
+    footer {
+      text-align: center;
+      color: var(--muted);
+      font-size: 13px;
+      margin-top: 28px;
+      padding-top: 18px;
+      border-top: 1px solid var(--border);
+    }
+  </style>
 </head>
 <body>
-    <div class="container">
-        <header>
-            <div class="badge">100% Offline-First Architecture</div>
-            <h1>SlotMind (Ekagra) — Privacy Policy & Terms of Use</h1>
-            <p class="subtitle">Academic Focus OS & 1-4-7 Spaced Repetition Memory Brain</p>
-            <div class="meta-info">
-                <span>Application ID: <code>com.arkyron.slotmind</code></span> • 
-                <span>Developer & Publisher: <strong>Mahendra Dara (ARKYRON / Arkyron Studio)</strong></span> • 
-                <span>Last Updated: <strong>November 2026</strong></span>
-            </div>
-        </header>
+  <div class="container">
+    <header class="hero">
+      <div class="badge">100% Offline-First Architecture</div>
+      <h1>SlotMind (Ekagra) — Privacy Policy &amp; Terms of Use</h1>
+      <div class="subtitle">Academic Focus OS &amp; 1-4-7 Spaced Repetition Memory Brain</div>
+      <div class="meta">
+        <span><strong>Application ID:</strong> <code>com.arkyron.slotmind</code></span>
+        <span><strong>Developer &amp; Publisher:</strong> Mahendra Dara (ARKYRON / Arkyron Studio)</span>
+        <span><strong>Last Updated:</strong> November 23, 2026</span>
+      </div>
+    </header>
 
-        <!-- Section 1 -->
-        <section class="card">
-            <h2>🛡️ 1. 100% Local-First Data Storage & Zero Developer Server Telemetry</h2>
-            <p>
-                <strong>SlotMind (Ekagra)</strong> is engineered under a strict <strong>offline-first and zero-knowledge privacy architecture</strong>. 
-                Your study habits, focus sessions, time logs, notes, and academic records belong entirely to you.
-            </p>
-            <div class="highlight-box">
-                <strong>Zero Developer Cloud Databases:</strong> Mahendra Dara / Arkyron Studio does not maintain, transmit to, or operate any remote cloud servers 
-                or external database infrastructure storing your study sessions, calendar plans, notes, or test scores. (Only standard third-party Google Play Billing 
-                and Google AdMob SDKs communicate with Google servers as detailed in Section 5.)
-            </div>
-            <ul>
-                <li><strong>Local SQLite Database:</strong> All session durations, active study intervals, break times, and segment records are saved strictly on your local device in sandboxed SQLite tables using Android's Room persistence library (<code>Context.MODE_PRIVATE</code>).</li>
-                <li><strong>Local 3-Tier Tasks, Blueprints & 1-4-7 Memory Topics:</strong> Your Long-Term, Weekly, and Dated Daily syllabus trees, sub-topic weights, 1-4-7 review schedules, and spaced repetition intervals are stored exclusively on your device.</li>
-                <li><strong>Value Notes Vault, Diagrams & Mock Test Error Vault:</strong> Structured notes, custom freehand/shape diagrams, test scores, question accuracy percentages, autopsy reflections, error tags, and local photo/PDF attachment files remain stored solely within your application's private sandbox (<code>/data/data/com.arkyron.slotmind</code>).</li>
-                <li><strong>Offline Integrity Protection (RASP):</strong> Runtime application self-protection and signature integrity checks execute 100% locally on your device without transmitting any personal or device data externally.</li>
-            </ul>
-        </section>
+    <section class="card">
+      <h2>🛡️ 1. 100% Local-First Data Storage &amp; Zero Developer Server Telemetry</h2>
+      <p>SlotMind is engineered under a strict offline-first, zero-knowledge architecture. Your study habits, focus sessions, notes, test scores, and error logs belong exclusively to you.</p>
+      <ul>
+        <li><strong>Zero Developer Cloud Databases:</strong> Mahendra Dara / Arkyron Studio does not operate any remote servers, Firebase instances, analytics trackers, or cloud databases storing your study data. Only official Google Play Billing and Google AdMob SDKs communicate with Google servers as disclosed in Section 5.</li>
+        <li><strong>Local Sandboxed SQLite Database:</strong> All focus durations, active study intervals, break times, and segment records are stored strictly on your device in private SQLite tables via Android Room (<code>Context.MODE_PRIVATE</code>).</li>
+        <li><strong>Local Tasks, 1-4-7 Memory &amp; Vaults:</strong> Your 3-tier tasks, syllabus blueprints, 1-4-7 spaced revision schedules, Value Notes, Sketch Pad diagrams, Mock Test scores, Error Vault entries, and user-selected photo/PDF attachments remain strictly inside the app's private sandbox (<code>/data/data/com.arkyron.slotmind</code>).</li>
+        <li><strong>Offline Integrity Protection:</strong> Integrity checks execute 100% locally on your device without transmitting personal data externally.</li>
+      </ul>
+    </section>
 
-        <!-- Section 2 -->
-        <section class="card">
-            <h2>⚙️ 2. Android Device Permissions & Technical Justifications</h2>
-            <p>
-                SlotMind requests only the exact Android system permissions required to provide accurate, uninterrupted study timers, alarms, and user-initiated file exports. 
-                None of these permissions are used for background surveillance or unauthorized data scraping.
-            </p>
-            <ul>
-                <li><strong><code>FOREGROUND_SERVICE</code> & <code>FOREGROUND_SERVICE_SPECIAL_USE</code>:</strong> Required to keep the student's active focus stopwatch and 45-10-5 slot countdown running reliably without being prematurely killed by Android's background battery optimizers.</li>
-                <li><strong><code>WAKE_LOCK</code> & <code>USE_EXACT_ALARM</code> / <code>SCHEDULE_EXACT_ALARM</code>:</strong> Ensures the hardware timer and study alarms wake the CPU on time when the device screen is turned off during study sessions, firing 5m/10m/15m/30m/45m+ break reminders and stage transition cues.</li>
-                <li><strong><code>POST_NOTIFICATIONS</code> (Android 13+):</strong> Displays the ongoing foreground study notification and delivers stage transitions, break milestone prompts, and student burnout/wellness thresholds (10h/13h).</li>
-                <li><strong><code>com.android.vending.BILLING</code>:</strong> Powers optional Google Play In-App Billing for users choosing to purchase auto-renewing Pro subscriptions (<code>slotmind_pro_sub</code>: monthly, quarterly, biannual, or yearly) or the one-time Lifetime Pro Pass (<code>slotmind_pro_lifetime</code>). All transactions are processed securely by Google Play.</li>
-                <li><strong><code>INTERNET</code> & <code>AD_ID</code>:</strong> Used strictly to validate Google Play purchases and to fetch Google AdMob rewarded video ads on the free tier when the user explicitly taps "Unlock 24-Hour Pass", or to load optional non-intrusive native ads.</li>
-            </ul>
-        </section>
+    <section class="card">
+      <h2>⚙️ 2. Android Permissions &amp; Strict Exclusions</h2>
+      <p>SlotMind requests only the minimum Android permissions required for accurate background timing, reminders, and optional purchases:</p>
+      <ul>
+        <li><code>FOREGROUND_SERVICE</code>, <code>FOREGROUND_SERVICE_DATA_SYNC</code> &amp; <code>FOREGROUND_SERVICE_SPECIAL_USE</code>: Keeps your active focus stopwatch and slot timer running reliably when the screen is off.</li>
+        <li><code>WAKE_LOCK</code>, <code>SCHEDULE_EXACT_ALARM</code> &amp; <code>VIBRATE</code>: Fires accurate stage transitions (Focus → Recall → Rest) and break milestone reminders without battery-saver drift.</li>
+        <li><code>POST_NOTIFICATIONS</code>: Displays the live study timer notification, stage cues, and daily wellness check-ins.</li>
+        <li><code>REQUEST_IGNORE_BATTERY_OPTIMIZATIONS</code> (Optional): Helps prevent OEM battery killers from stopping long study timers.</li>
+        <li><code>com.android.vending.BILLING</code>, <code>INTERNET</code> &amp; <code>ACCESS_NETWORK_STATE</code>: Used strictly to validate optional Google Play Pro purchases and load optional user-initiated rewarded video ads on the free tier.</li>
+      </ul>
+      <div class="highlight-box">
+        <strong>Strictly Excluded Permissions:</strong> SlotMind NEVER requests Location (<code>ACCESS_FINE_LOCATION</code> / <code>ACCESS_COARSE_LOCATION</code>), Camera, Microphone, Contacts, External Storage / Gallery permissions (<code>READ_EXTERNAL_STORAGE</code> / <code>READ_MEDIA_IMAGES</code>), or <code>BIND_ACCESSIBILITY_SERVICE</code>. Photo attachments and backups use Android's native Storage Access Framework (SAF) picker so the app accesses only the exact files you explicitly select. The in-app Dopamine Urge Shield is purely a local 10-second mindful breathing prompt.
+      </div>
+    </section>
 
-        <!-- Section 3 -->
-        <section class="card">
-            <h2>⚖️ 3. Medical, Clinical & Government Non-Affiliation Disclaimers</h2>
-            <div class="warning-box">
-                <strong>Academic Habit & Productivity Utility:</strong> SlotMind (Ekagra) is designed purely as an academic scheduling, 
-                stopwatch, note-taking, and spaced-repetition habit tracker. It does not provide medical, psychological, or clinical diagnostic advice.
-            </div>
-            <ul>
-                <li><strong>Non-Government Affiliation:</strong> SlotMind (Ekagra), Mahendra Dara, and Arkyron Studio are independent entities and are <strong>not affiliated with, endorsed by, or connected to</strong> the Union Public Service Commission (UPSC), National Testing Agency (NTA), SSC, CBSE, State Public Service Commissions, or any governmental testing authority.</li>
-                <li><strong>Student Wellness Check-in:</strong> The 10-hour and 13-hour wellness reminders are algorithmic pacing recommendations intended to promote healthy study hygiene, balanced sleep, and burnout prevention. They are not medical interventions.</li>
-            </ul>
-        </section>
+    <section class="card">
+      <h2>⚖️ 3. Medical, Clinical &amp; Non-Government Affiliation Disclaimers</h2>
+      <ul>
+        <li><strong>Productivity Utility Only:</strong> SlotMind is an academic timer, planner, note-taking, and spaced-repetition utility. It does not provide medical, psychological, or clinical advice.</li>
+        <li><strong>Non-Government Affiliation:</strong> SlotMind, Mahendra Dara, and Arkyron Studio are independent entities and are not affiliated with, endorsed by, or connected to UPSC, NTA, SSC, CBSE, State PSCs, or any government examination authority.</li>
+        <li><strong>Wellness Nudges:</strong> Study duration and break reminders (10h/13h) are voluntary pacing tips to encourage healthy study hygiene—not medical interventions.</li>
+      </ul>
+    </section>
 
-        <!-- Section 4 -->
-        <section class="card">
-            <h2>💾 4. Complete Data Ownership, User-Initiated Sharing & 1-Tap Wipe</h2>
-            <p>
-                You retain complete, sovereign ownership of your academic records. Because all study data resides locally on your device (<code>android:allowBackup="false"</code>), you have full control over exportarion and deletion at any time:
-            </p>
-            <ul>
-                <li><strong>Private Vault Backup & Blueprint Sharing:</strong> You can generate an offline JSON backup file from <code>Hub ➔ Cloud Vault</code>, export PDF Note Dossiers, or share Syllabus Blueprint (.json) files with mentors/peers via Android's native FileProvider share sheet. Files leave your device only when you explicitly tap Share or Export.</li>
-                <li><strong>1-Tap Instant Wipe:</strong> You can permanently delete 100% of your sessions, syllabus tasks, 1-4-7 topics, notes, diagrams, and test autopsies at any moment by navigating to <code>Hub ➔ Reset Data</code> (or by uninstalling the application). All local SQLite database tables and sandboxed files are cleared immediately with zero remnants.</li>
-            </ul>
-        </section>
+    <section class="card">
+      <h2>💾 4. Complete Data Ownership, User-Controlled Backup &amp; 1-Tap Wipe</h2>
+      <p>Because all study data stays strictly on your device (<code>android:allowBackup="false"</code>), you hold complete control over export and deletion:</p>
+      <ul>
+        <li><strong>Private Vault Backup &amp; PDF/Blueprint Export:</strong> You may export an offline JSON backup via <em>Hub ➔ Cloud Vault</em> (to local storage or your personal Google Drive via Android SAF), export printable A4 PDF dossiers, or share Syllabus Blueprints via Android's native share sheet. Files leave your device only when you explicitly tap Export or Share.</li>
+        <li><strong>1-Tap Instant Erasure:</strong> You can permanently delete 100% of your sessions, tasks, 1-4-7 topics, notes, diagrams, test logs, and error attachments anytime via <em>Hub ➔ Reset Data</em> (or by uninstalling the app).</li>
+      </ul>
+    </section>
 
-        <!-- Section 5 -->
-        <section class="card">
-            <h2>🌐 5. Third-Party SDKs, Data Safety & Payment Processing</h2>
-            <p>
-                SlotMind integrates exclusively with official Google Android platform services:
-            </p>
-            <ul>
-                <li><strong>Google Play Billing:</strong> Subscription (<code>slotmind_pro_sub</code>) and lifetime in-app purchase (<code>slotmind_pro_lifetime</code>) validation is handled directly by Google Play. We never see, collect, store, or process your credit card, debit card, UPI, or banking details.</li>
-                <li><strong>Google AdMob (Free Tier Only):</strong> On the free tier, the Google Mobile Ads SDK may collect and process your device's Google Advertising ID (GAID/AD_ID), coarse device/network diagnostics, and ad interaction events on Google's servers in accordance with Google's Privacy Policy (<a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer" style="color: var(--accent-cyan);">https://policies.google.com/privacy</a>). Users can reset or delete their Advertising ID at any time in Android Settings ➔ Google ➔ Ads. Users who upgrade to SlotMind Pro enjoy a 100% ad-free experience.</li>
-            </ul>
-        </section>
+    <section class="card">
+      <h2>🌐 5. Third-Party Services, Non-Personalized Ads &amp; Billing</h2>
+      <p>SlotMind integrates exclusively with official Google Android platform services:</p>
+      <ul>
+        <li><strong>Google Play Billing:</strong> Optional Pro subscriptions (<code>slotmind_pro_sub</code>) and Lifetime Pro Pass (<code>slotmind_pro_lifetime</code>) are processed solely by Google Play. We never see, collect, or store your card, UPI, or banking details.</li>
+        <li><strong>Google AdMob (Free Tier — Optional Rewarded Video Only):</strong> On the free tier, when you explicitly choose to watch a rewarded video ad (e.g., to unlock a temporary 24-hour pass), the Google Mobile Ads SDK processes limited technical signals (device/network diagnostics, IP address, ad interaction events, and Advertising ID where permitted) under <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google's Privacy Policy</a>.</li>
+        <li><strong>Non-Personalized Ads by Default (<code>npa=1</code>):</strong> SlotMind configures AdMob requests with <strong>Non-Personalized Ads (<code>npa=1</code>)</strong> and a strict Teen/Student content filter (<code>MAX_AD_CONTENT_RATING_T</code>). We do not run behavioral ad profiling or cross-app interest tracking. SlotMind Pro users experience a 100% ad-free app.</li>
+        <li><strong>Regional Consent (Google UMP):</strong> For users in the EEA, UK, and applicable regions, consent preferences are managed via Google's User Messaging Platform (UMP) and can be updated anytime in App Settings.</li>
+      </ul>
+    </section>
 
-        <!-- Section 6 -->
-        <section class="card">
-            <h2>📫 6. Contact Information, Intellectual Property & Developer Details</h2>
-            <p>
-                If you have any questions, feedback, security inquiries, or privacy requests regarding SlotMind (Ekagra), please contact us directly:
-            </p>
-            <div class="highlight-box">
-                <strong>Developer & Legal Owner:</strong> Mahendra Dara<br>
-                <strong>Brand / Studio:</strong> ARKYRON (Arkyron Studio)<br>
-                <strong>Product:</strong> SlotMind (Ekagra) — Academic Focus & Spaced Memory OS<br>
-                <strong>Package Name:</strong> <code>com.arkyron.slotmind</code><br>
-                <strong>Direct Contact Email:</strong> <a href="mailto:arkyronos@gmail.com" style="color: var(--accent-cyan);">arkyronos@gmail.com</a>
-            </div>
-        </section>
+    <section class="card">
+      <h2>🇮🇳 6. Statutory Privacy Rights (India DPDP Act 2023, GDPR, CCPA &amp; Protection of Minors)</h2>
+      <p>SlotMind respects user privacy rights under India's <strong>Digital Personal Data Protection (DPDP) Act, 2023</strong> (and DPDP Rules, 2025), EU/UK GDPR, and US CCPA/COPPA:</p>
+      <ul>
+        <li><strong>Protection of Under-18 Students (DPDP Sec. 9(3) &amp; COPPA):</strong> SlotMind is designed for students aged 13+ and enforces <strong>zero developer tracking, zero behavioral profiling, and Non-Personalized Ads (<code>npa=1</code>)</strong>—ensuring that students under 18 are never subjected to targeted advertising or behavioral monitoring.</li>
+        <li><strong>Right to Access &amp; Portability:</strong> Export 100% of your local study records anytime via <em>Hub ➔ Cloud Vault</em>.</li>
+        <li><strong>Right to Correction &amp; Erasure:</strong> Edit any record in-app or permanently wipe all local data anytime via <em>Hub ➔ Reset Data</em>.</li>
+        <li><strong>Right to Withdraw Consent:</strong> You may opt out of rewarded ads simply by not tapping rewarded prompts, reset/delete your Android Advertising ID in <em>Android Settings ➔ Google ➔ Ads</em>, update UMP privacy choices in App Settings, or upgrade to ad-free Pro.</li>
+        <li><strong>Grievance Redressal (India DPDP Act):</strong> For any privacy, data erasure, or legal request, contact our designated Grievance Officer directly at <a href="mailto:arkyronos@gmail.com">arkyronos@gmail.com</a>. We acknowledge and resolve privacy inquiries promptly within statutory timelines.</li>
+      </ul>
+    </section>
 
-        <footer>
-            <p style="font-size: 16px; font-weight: 800; color: var(--text-primary); letter-spacing: 1.5px; margin-bottom: 6px;">SLOTMIND</p>
-            <p style="color: var(--accent-cyan); font-weight: 600; margin-bottom: 8px;">Powered by ARKYRON</p>
-            <p style="margin-bottom: 12px;">© 2026 Mahendra Dara. All rights reserved.</p>
-            <p style="font-size: 12px; color: var(--text-muted); max-width: 640px; margin: 0 auto; line-height: 1.6;">
-                SlotMind is an independently developed academic productivity application.<br>
-                The original software, documentation and creative assets are protected by applicable intellectual property laws.<br>
-                ARKYRON is the brand under which SlotMind is developed and published.
-            </p>
-        </footer>
-    </div>
+    <section class="card">
+      <h2>📜 7. Terms of Use</h2>
+      <ul>
+        <li><strong>Personal Academic License:</strong> SlotMind is licensed for personal, non-commercial study and exam preparation. Reverse engineering, unauthorized redistribution, or tampering with Pro entitlements is prohibited.</li>
+        <li><strong>Subscriptions &amp; Refunds:</strong> Auto-renewing Pro subscriptions can be managed or canceled anytime via <em>Google Play Store ➔ Payments &amp; Subscriptions</em>. Billing and refunds follow Google Play's standard policies.</li>
+        <li><strong>Local Backup Responsibility:</strong> Because SlotMind does not store your study data on developer servers, you are responsible for periodically exporting backups via <em>Cloud Vault</em> before uninstalling the app, clearing app storage, or switching phones.</li>
+        <li><strong>Governing Law:</strong> These terms are governed by the laws of India.</li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <h2>📫 8. Contact Information, Grievance Officer &amp; Developer Details</h2>
+      <ul>
+        <li><strong>Developer, Legal Owner &amp; Grievance Officer:</strong> Mahendra Dara</li>
+        <li><strong>Brand / Studio:</strong> ARKYRON (Arkyron Studio)</li>
+        <li><strong>Product:</strong> SlotMind (Ekagra) — Academic Focus &amp; Spaced Memory OS</li>
+        <li><strong>Package Name:</strong> <code>com.arkyron.slotmind</code></li>
+        <li><strong>Direct Support &amp; Privacy Email:</strong> <a href="mailto:arkyronos@gmail.com">arkyronos@gmail.com</a></li>
+      </ul>
+    </section>
+
+    <footer>
+      <strong>SLOTMIND</strong> · Powered by ARKYRON<br />
+      &copy; 2026 Mahendra Dara. All rights reserved.<br />
+      SlotMind is an independently developed academic productivity application.
+    </footer>
+  </div>
 </body>
 </html>
