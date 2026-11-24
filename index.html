@@ -169,12 +169,12 @@
       </ul>
     </section>
 
-    <section class="card">
+   <section class="card">
       <h2>🌐 5. Third-Party Services, Non-Personalized Ads &amp; Billing</h2>
       <p>SlotMind integrates exclusively with official Google Android platform services:</p>
       <ul>
         <li><strong>Google Play Billing:</strong> Optional Pro subscriptions (<code>slotmind_pro_sub</code>) and Lifetime Pro Pass (<code>slotmind_pro_lifetime</code>) are processed solely by Google Play. We never see, collect, or store your card, UPI, or banking details.</li>
-        <li><strong>Google AdMob (Free Tier — Optional Rewarded Video Only):</strong> On the free tier, when you explicitly choose to watch a rewarded video ad (e.g., to unlock a temporary 24-hour pass), the Google Mobile Ads SDK processes limited technical signals (device/network diagnostics, IP address, ad interaction events, and Advertising ID where permitted) under <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google's Privacy Policy</a>.</li>
+        <li><strong>Google AdMob (Free Tier — Non-Personalized Ads):</strong> On the free tier, when ads are shown (such as non-personalized native ad cards or optional user-initiated rewarded video ads), the Google Mobile Ads SDK automatically collects and shares limited technical signals—specifically your device's <strong>IP address</strong> (which Google may use to estimate general/approximate location), <strong>app interactions</strong> (such as ad taps and video views), <strong>diagnostic information</strong> (app/SDK performance metrics), and <strong>device/advertising identifiers</strong> (Android Advertising ID and App Set ID, where permitted)—encrypted in transit via HTTPS/TLS for ad delivery, analytics, and fraud prevention under <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google's Privacy Policy</a>. <strong>SlotMind never requests Android location permissions and never accesses your GPS or precise physical location.</strong></li>
         <li><strong>Non-Personalized Ads by Default (<code>npa=1</code>):</strong> SlotMind configures AdMob requests with <strong>Non-Personalized Ads (<code>npa=1</code>)</strong> and a strict Teen/Student content filter (<code>MAX_AD_CONTENT_RATING_T</code>). We do not run behavioral ad profiling or cross-app interest tracking. SlotMind Pro users experience a 100% ad-free app.</li>
         <li><strong>Regional Consent (Google UMP):</strong> For users in the EEA, UK, and applicable regions, consent preferences are managed via Google's User Messaging Platform (UMP) and can be updated anytime in App Settings.</li>
       </ul>
