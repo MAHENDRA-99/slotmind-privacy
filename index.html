@@ -138,17 +138,16 @@
 
     <section class="card">
       <h2>⚙️ 2. Android Permissions &amp; Strict Exclusions</h2>
-      <p>SlotMind requests only the minimum Android permissions required for accurate background timing, reminders, and optional purchases:</p>
+      <p>SlotMind requests only the minimum Android permissions required for accurate background timing, reminders, optional purchases, and optional on-device focus protection:</p>
       <ul>
-        <li><code>FOREGROUND_SERVICE</code>, <code>FOREGROUND_SERVICE_DATA_SYNC</code> &amp; <code>FOREGROUND_SERVICE_SPECIAL_USE</code>: Keeps your active focus stopwatch and slot timer running reliably when the screen is off.</li>
-        <li><code>WAKE_LOCK</code>, <code>SCHEDULE_EXACT_ALARM</code> &amp; <code>VIBRATE</code>: Fires accurate stage transitions (Focus → Recall → Rest) and break milestone reminders without battery-saver drift.</li>
-        <li><code>POST_NOTIFICATIONS</code>: Displays the live study timer notification, stage cues, and daily wellness check-ins.</li>
-        <li><code>REQUEST_IGNORE_BATTERY_OPTIMIZATIONS</code> (Optional): Helps prevent OEM battery killers from stopping long study timers.</li>
-        <li><code>com.android.vending.BILLING</code>, <code>INTERNET</code> &amp; <code>ACCESS_NETWORK_STATE</code>: Used strictly to validate optional Google Play Pro purchases and load optional user-initiated rewarded video ads on the free tier.</li>
+        <li><strong><code>FOREGROUND_SERVICE</code>, <code>FOREGROUND_SERVICE_DATA_SYNC</code> &amp; <code>FOREGROUND_SERVICE_SPECIAL_USE</code>:</strong> Keeps your active focus stopwatch and slot timer running reliably when the screen is off.</li>
+        <li><strong><code>WAKE_LOCK</code>, <code>SCHEDULE_EXACT_ALARM</code> &amp; <code>VIBRATE</code>:</strong> Fires accurate stage transitions (Focus → Recall → Rest) and break milestone reminders without battery-saver drift.</li>
+        <li><strong><code>POST_NOTIFICATIONS</code>:</strong> Displays the live study timer notification, stage cues, and daily wellness check-ins.</li>
+        <li><strong><code>REQUEST_IGNORE_BATTERY_OPTIMIZATIONS</code> (Optional):</strong> Helps prevent OEM battery killers from stopping long study timers.</li>
+        <li><strong><code>com.android.vending.BILLING</code>, <code>INTERNET</code> &amp; <code>ACCESS_NETWORK_STATE</code>:</strong> Used strictly to validate optional Google Play Pro purchases and load non-personalized native ad cards or optional user-initiated rewarded video ads on the free tier.</li>
+        <li><strong><code>PACKAGE_USAGE_STATS</code> &amp; <code>SYSTEM_ALERT_WINDOW</code> (Strictly Optional — Focus Distraction Shield Only):</strong> Requested <em>only</em> if you manually enable the Focus Distraction Shield (OFF by default; SlotMind remains 100% functional if declined). Used strictly on-device during active focus slots to let you choose installed launcher apps to block, detect when a self-selected distraction app opens, and display a focus reminder card. Installed app lists and app-usage signals are never stored remotely, sold, or shared for advertising or analytics.</li>
       </ul>
-      <div class="highlight-box">
-        <strong>Strictly Excluded Permissions:</strong> SlotMind NEVER requests Location (<code>ACCESS_FINE_LOCATION</code> / <code>ACCESS_COARSE_LOCATION</code>), Camera, Microphone, Contacts, External Storage / Gallery permissions (<code>READ_EXTERNAL_STORAGE</code> / <code>READ_MEDIA_IMAGES</code>), or <code>BIND_ACCESSIBILITY_SERVICE</code>. Photo attachments and backups use Android's native Storage Access Framework (SAF) picker so the app accesses only the exact files you explicitly select. The in-app Dopamine Urge Shield is purely a local 10-second mindful breathing prompt.
-      </div>
+      <p><strong>Strictly Excluded Permissions:</strong> SlotMind NEVER requests Location (<code>ACCESS_FINE_LOCATION</code> / <code>ACCESS_COARSE_LOCATION</code>), Camera, Microphone, Contacts, External Storage / Gallery permissions (<code>READ_EXTERNAL_STORAGE</code> / <code>READ_MEDIA_IMAGES</code>), <code>QUERY_ALL_PACKAGES</code>, or <code>BIND_ACCESSIBILITY_SERVICE</code>. Photo attachments and backups use Android's native Storage Access Framework (SAF) picker so the app accesses only the exact files you explicitly select. The in-app Dopamine Urge Shield is purely a local 10-second mindful breathing prompt.</p>
     </section>
 
     <section class="card">
@@ -162,10 +161,10 @@
 
     <section class="card">
       <h2>💾 4. Complete Data Ownership, User-Controlled Backup &amp; 1-Tap Wipe</h2>
-      <p>Because all study data stays strictly on your device (<code>android:allowBackup="false"</code>), you hold complete control over export and deletion:</p>
+      <p>Because all study data stays strictly on your device (<code>android:allowBackup="false"</code>), you hold complete control over export, auto-sync, and deletion:</p>
       <ul>
-        <li><strong>Private Vault Backup &amp; PDF/Blueprint Export:</strong> You may export an offline JSON backup via <em>Hub ➔ Cloud Vault</em> (to local storage or your personal Google Drive via Android SAF), export printable A4 PDF dossiers, or share Syllabus Blueprints via Android's native share sheet. Files leave your device only when you explicitly tap Export or Share.</li>
-        <li><strong>1-Tap Instant Erasure:</strong> You can permanently delete 100% of your sessions, tasks, 1-4-7 topics, notes, diagrams, test logs, and error attachments anytime via <em>Hub ➔ Reset Data</em> (or by uninstalling the app).</li>
+        <li><strong>Private Vault Backup (<code>.zip</code> / <code>.json</code>), Optional Nightly Drive Auto-Sync &amp; PDF/Card Export:</strong> You may export an offline <code>.zip</code> Vault archive (containing your local database records and photo/PDF attachments) via <strong>Hub ➔ Cloud Vault</strong> to local storage or your personal Google Drive via Android SAF, optionally enable nightly on-device auto-sync to your own linked SAF file, export printable A4 PDF dossiers, or share Syllabus Blueprints and branded study cards via Android's native share sheet. Files leave your device only when you explicitly export, share, or link your personal SAF destination.</li>
+        <li><strong>1-Tap Instant Erasure:</strong> You can permanently delete 100% of your sessions, tasks, 1-4-7 topics, notes, diagrams, test logs, and error attachments anytime via <strong>Hub ➔ Reset Data</strong> (or by uninstalling the app).</li>
       </ul>
     </section>
 
